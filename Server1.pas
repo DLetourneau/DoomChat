@@ -28,13 +28,13 @@ type
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
-  public
-    { Public declarations }
     procedure BroadCast(src: String; msg: String);
     procedure BiggerList();
     procedure Reset();
     function CheckUserList(targetIP: String): String;
     function UserExists(targetIP: String): Integer;
+  public
+    { Public declarations }
   end;
 
 var

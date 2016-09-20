@@ -38,9 +38,10 @@ type
     procedure btnDarkClick(Sender: TObject);
   private
     { Private declarations }
+    procedure ChangeMode(mode:Boolean);
   public
     { Public declarations }
-    procedure ChangeMode(mode:Boolean);
+    
   end;
 
 var
