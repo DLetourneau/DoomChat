@@ -90,15 +90,12 @@ end;
 procedure TForm1.ssSocketClientRead(Sender: TObject;
   Socket: TCustomWinSocket);
 var
-    len:integer;
-    cmd: integer;
-    temp:String;
-    src:String;
-    msg:String;
+    len, cmd:integer;
+    temp, src, msg: String;
 begin
-    src:=Socket.RemoteAddress;
-    msg:=Trim(Socket.ReceiveText);
-    len:=Length(msg);
+    src := Socket.RemoteAddress;
+    msg := Trim(Socket.ReceiveText);
+    len := Length(msg);
     if len >= 7 then
     begin
         // Gets the first 3 chars of the message
